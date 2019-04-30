@@ -1,0 +1,42 @@
+//menu styles
+header
+  nav
+    display: none
+    ul
+      list-style-type: none
+      margin: 0
+      padding: 0
+      text-align: center
+      li
+        margin-top: 2rem
+        a
+          @extend .hugeFont
+          font-weight: bold
+          color: black
+    div.social
+      width: 100vw
+      margin-top: 5rem
+      +flexbox(space-around)
+      +breakpoint
+        width: auto
+        margin-top: 0
+        flex-direction: column
+        a:not(:first-of-type)
+          margin-top: 2rem
+
+.showMenu
+  +flexbox(null, center, column, null)
+  +breakpoint
+    flex-direction: row
+    justify-content: space-around
+    height: 80vh
+
+.change
+  .bar1
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-9px, 6px)
+  .bar2
+    opacity: 0
+  .bar3
+    -webkit-transform: rotate(45deg) translate(-8px, -8px)
+    transform: rotate(45deg) translate(-8px, -8px)

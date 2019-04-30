@@ -1,0 +1,41 @@
+description: Webdesigner e designer gr&aacute;fico no Rio de Janeiro. Precisa de um projeto de identidade visual?
+keywords: designer, gr&aacute;fico, webdesigner
+
+author:
+  name: Ramon Uch&ocirc;a
+  profession: Webdesigner e designer gr&aacute;fico
+  email: contato@ramonuchoa.com.br
+  github: ramonuchoa386
+  behance: ramonuchoa
+  linkedin: in/rubranding
+
+includes_dir: _includes
+layouts_dir: _layouts
+
+encoding: utf-8
+
+sass:
+  sass_dir: _sass
+  style: uncompressed
+
+collections:
+  projetos:
+    output: true
+
+plugins:
+  - jekyll-autoprefixer
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: projetos
+    values:
+      layout: job
+      pageStyle: jobPage
+
+kramdown:
+  auto_ids: false
+
+host: 0.0.0.0
+port: 8000

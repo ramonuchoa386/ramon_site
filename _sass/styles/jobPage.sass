@@ -1,0 +1,21 @@
+// jpbPage Styles
+main.jobPage
+  div.content
+    div.jobImgBoard
+      +breakpoint
+        width: 60vw
+        margin: 0 auto
+        +flexbox(space-around, center, null, wrap)
+      img.jobImg
+        width: 80vw
+        margin: 2rem auto 0
+        display: block
+        +breakpoint
+          width: 20vw
+          margin: 0
+    a
+      @extend .btn
+      width: 150px
+      display: block
+      margin: 2rem auto 0
+      text-align: center

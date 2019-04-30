@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body>
+{% include header.html %}
+<main class='wrapper {{page.pageStyle}}'>
+  <div class='content'>
+  {{content}}
+  </div>
+</main>
+<section class='cta'>
+  <h4>Entre em contato agora!</h4>
+  <form action='form.php' method='post'>
+    <input type='text' name='name' placeholder='nome' required>
+    <input type='email' name='email' placeholder='email' required>
+    <textarea type='text' name='message' placeholder='ideia'></textarea>
+    <input type='submit' value='Enviar'>
+  </form>
+</section>
+{% include footer.html %}
+<script src='/assets/js/scripts.js'></script>
+</body>
+</html>

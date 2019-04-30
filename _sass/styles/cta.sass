@@ -1,0 +1,27 @@
+// cta and form styles
+section.cta
+  margin-top: 5rem
+  padding: 0 5vw
+  h4
+    margin: 0
+    +breakpoint
+      text-align: center
+  form
+    margin-top: 2rem
+    +flexbox(null, center, column)
+    & > *
+      @extend .btn
+    & > *:not(:first-child)
+      margin-top: 1rem
+    input:not([type=submit]), textarea
+      width: 60vw
+      +breakpoint
+        width: 20vw
+    input:not([type=submit])
+      height: 2rem
+    textarea
+      height: 4rem
+    input[type=submit]
+      width: 150px
+      height: 2rem
+      background: none

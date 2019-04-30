@@ -1,0 +1,25 @@
+// header styles
+header
+  padding: 5vw
+  +breakpoint
+    padding: 3vw
+  & > div
+    +flexbox(space-between, center, null, null)
+    svg
+      width: 40px
+      height: auto
+      +breakpoint
+        width: 5vw
+        height: auto
+    button
+      padding: 0
+      background-color: transparent
+      border: none
+      span.bar1, span.bar2, span.bar3
+        display: block
+        border-radius: 2px
+        width: 35px
+        height: 5px
+        background-color: #333
+        margin: 6px 0
+        transition: 0.4s

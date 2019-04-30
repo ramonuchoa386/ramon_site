@@ -1,0 +1,46 @@
+---
+---
+// external
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,900')
+
+// plugins
+@import plugins/neat
+
+// helpers
+@import helpers/mixins
+
+// typography
+@import helpers/typography_grid
+
+// global styles
+body
+  margin: 0
+
+a
+  text-decoration: none
+
+.btn
+  border: 1px solid black
+  padding: 5px
+
+main.wrapper
+  margin-top: 5rem
+  +breakpoint
+    margin-top: 3rem
+  div.content
+    padding: 0 5vw
+    h1
+      margin: 0
+    p
+      margin-top: 1rem
+      +breakpoint
+        width: 40vw
+
+
+@import styles/header
+@import styles/menu
+@import styles/cta
+@import styles/landing
+@import styles/jobPage
+@import styles/about
+@import styles/footer

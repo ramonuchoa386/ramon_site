@@ -1,0 +1,15 @@
+---
+layout: default
+pageStyle: landing
+---
+<h1>{{site.author.profession}} | {{site.author.name}}</h1>
+<ol class='jobList'>
+  {% for project in site.projetos %}
+  {% if project.layout == 'job'%}
+  <li>
+    <a href='{{project.url}}'>{{project.title}}</a>
+    {{project.content}}
+  </li>
+  {% endif %}
+  {% endfor %}
+</ol>
